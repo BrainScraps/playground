@@ -1,0 +1,34 @@
+
+
+<% if params.empty? %>
+<h2> Find out the latest stock price for: </h2>
+	<form>
+
+    <input type="text" placeholder="AAPL..." name="symbol">
+
+    <button type="submit" class="btn">Submit</button>
+
+</form>
+
+
+
+
+<% elsif @company.nil? %>
+
+	<p> Sorry, that symbol was not found. Please <a class="btn btn-success " href="/stocks">try another</a> </p>
+
+
+<% else %>
+
+	<h3> <%=  " #{@s} latest price: $ #{@company.last}"%> </h3>
+
+	<p> Company name: <%= @company.company %> </p>
+	<p> Listed on: <%= @company.exchange %> </p>
+	<p> For Google Finance chart: <a href="http://google.com<%= @company.chart_url %>"> <%= "#{@company.company} charts"%> </a></p>
+
+	<div class="row-fluid"> 
+			<a class="btn btn-large btn-success center" href="/stocks"> Another stock quote? </a> 
+	</div>
+
+
+<% end %>

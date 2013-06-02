@@ -1,0 +1,36 @@
+
+<% if @movie && !@movie.plot.nil? %>
+	
+	<p>	<strong> Title:</strong> <%= @movie.title %> </p>
+
+	<p>	<strong> Rating:</strong> <%= @movie.rated %> </p>
+	<p>	<strong> Director:</strong> <%= @movie.director %> </p>
+	<p>	<strong> Plot:</strong> <%= @movie.plot %> </p>
+	<div class="row-fluid clear">
+		<div class="span6 center"> <img src="<%=@movie.poster%>" alt="<%=@movie.title %>" />
+	</div>
+
+	<div class="row-fluid"> 
+			<a class="btn btn-large btn-success center" href="/movies"> Another Movie? </a> 
+	</div>
+
+<% elsif  @movie  %>
+	<p> Sorry, that movie was not found. Please <a class="btn btn-success " href="/movies">try another</a> </p>
+
+
+<% else %>
+<h2> Let's find out about a movie from the incredible 
+	Internet Movie Database! </h2>
+
+	<p> Type in the name of a movie to find out more about it! </p>
+
+	<form>
+  <fieldset>
+    <label>Label name</label>
+    <input type="text" placeholder="Example Movie Title..." name="mtitle">
+
+    <button type="submit" class="btn">Submit</button>
+  </fieldset>
+</form>
+
+<% end %>

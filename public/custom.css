@@ -1,0 +1,51 @@
+.container-narrow{
+	margin: auto;
+	max-width: 700px;
+	background-color: rgba(0,0,0,0.85);
+	border-radius: 5px;
+	padding: 12px 12px;
+	color: #F2F2F2;
+}
+
+img.profile {
+	margin: 0 22px;
+}
+
+
+.social-icon {
+	height: 100px;
+	width: 100px;
+	margin: 0 5px;
+
+}
+
+.social-drawer {
+	text-align: center;
+}
+body{
+	background: none;
+	margin-top: 5px;
+}
+html {
+	background: url('back.jpg') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+
+.racing-font{
+	font-family: 'Rokkitt', cursive;
+}
+
+.center{
+	text-align: center;
+}
+
+h2,h3 {
+	font-family: 'Rokkitt', cursive;
+}
+
+.main_triple > a {
+	text-align: center;
+}
