@@ -1,5 +1,4 @@
 require "sinatra"
-require "sinatra/reloader"
 require "movies"
 require "stock_quote"
 require "image_suckr"

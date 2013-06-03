@@ -5,4 +5,4 @@ gem "octokit"
 gem "stock_quote"
 gem "image_suckr"
 gem "movies"
-
+gem "sinatra/reloader"
